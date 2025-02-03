@@ -104,3 +104,28 @@ fn main() {
 	}
 	
 }
+
+//struct Cli {
+//    // Define a command field to hold the command to execute
+//    #[clap(name = "command")]
+//    command: String,
+//
+//    // Define an args field to hold arguments for the command
+//    #[clap(name = "args")]
+//    args: Vec<String>,
+//
+//    // Define an append field to specify whether to append to an output file
+//    #[clap(
+//        short = 'a',
+//        long,
+//        help = "Append to output file instead of overwriting"
+//    )]
+//    append: bool,
+//
+//    // Define an output field to specify an output file
+//    #[clap(short = 'o', long, help = "Write output to a file instead of stdout")]
+//    output: Option<String>,
+//}
+
+//cargo run -- sleep 2
+//cargo run -- -o output.txt sleep 10
