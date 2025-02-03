@@ -1,6 +1,11 @@
-*.[m]
+*.[mr]
+*.py
 *.mat
+*.nf
+*.txt
+mm_notes_01112025.txt
+rust_project/source/main.txt
 Data/
 Figures/
-MM_RawData
-Model_Output
+MM_RawData/
+Modelutput/
