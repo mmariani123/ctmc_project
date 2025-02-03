@@ -4,7 +4,7 @@
 *.nf
 *.txt
 mm_notes_01112025.txt
-rust_project/source/main.txt
+rust_project/src/run_main.rs
 Data/
 Figures/
 MM_RawData/
