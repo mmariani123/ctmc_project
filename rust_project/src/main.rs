@@ -1,46 +1,79 @@
 use clap::Parser;
+//use evalexpr::*;
+//use schemars::{schema_for, JsonSchema}; 
+//use serde::Deserialize;
+// Note can also precompile expressions with evalexpr if desired see https://docs.rs/evalexpr/latest/evalexpr/
 
-/// Simple program to greet a person
+//see https://doc.rust-lang.org/book/ch14-02-publishing-to-crates-io.html#making-useful-documentation-comments
+
+/// The CLI for the CTMC life cycle modelling project.
+// '''
+// println!("Let's model that life cycle!");
+// '''
+
+// Author: Michael P. Mariani PhD
+// Year: 2025
+// License: GnuPLv3
+// Collaborator(s): Professor Olvia (Prosper) Feldman, PhD.,
+// Associate Professor of Mathematics, University of Tennessee.
+
+// # Some Config
+// 
+// This config does some stuff.
+//
+// # Example
+//
+// ```jsonc
+// {
+//   // use this config setting in a certain way
+//   "foo": ["bar", "baz"],
+// }
+// ```
+//#[derive(Debug, Deserialize, Default, JsonSchema)]
+//pub struct Config {
+//    foo: Vec<String>
+//}
+
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
 struct Args {
 
     /// N
-    #[arg(short, long, default_value_t = 1)]
+    #[arg(short, long, default_value_t = 10)]
     large_n: u8,
 	
-	#[arg(short, long, default_value_t = 1)]
-    a: u8,
+	#[arg(short, long, default_value_t = 24.00/(20.00/60.00) )]
+    a: f64,
 	
-	#[arg(short, long, default_value_t = 1)]
-    b: u8,
+	#[arg(short, long, default_value_t = 24.00/(20.00/60.00) )]
+    b: f64,
 	
-	#[arg(short, long, default_value_t = 1)]
-    r: u8,
+	#[arg(short, long, default_value_t = 0.08)]
+    r: f64,
 	
 	#[arg(short, long, default_value_t = 1)]
     z_mu: u8,
 	
-	#[arg(short, long, default_value_t = 1)]
-    isigma_z: u8,
+	#[arg(short, long, default_value_t = (24/19) as f64 )]
+    isigma_z: f64,
 	
-	#[arg(short, long, default_value_t = 1)]
-    jsigma_e: u8,
+	#[arg(short, long, default_value_t = 0.6 )]
+    jsigma_e: f64,
 	
-	#[arg(short, long, default_value_t = 1)]
-    ee_mu: u8,
+	#[arg(short, long, default_value_t = 1.4 )]
+    ee_mu: f64,
 	
-	#[arg(short, long, default_value_t = 1)]
+	#[arg(short, long, default_value_t = 0 )]
     o_mu: u8,
 	
-	#[arg(short, long, default_value_t = 1)]
-    n_small: u8,
+	#[arg(short, long, default_value_t = 3e3)]
+    n_small: f64,
 	
-	#[arg(short, long, default_value_t = 1)]
-    p: u8,
+	#[arg(short, long, default_value_t = 0.2)]
+    p: f64,
 	
-	#[arg(short, long, default_value_t = 1)]
-    u_alpha: u8,
+	#[arg(short, long, default_value_t = 0.39)]
+    u_alpha: f64,
 	
 	#[arg(short, long, default_value_t = 1)]
     x_beta: u8,
@@ -48,17 +81,17 @@ struct Args {
 	#[arg(short, long, default_value_t = 1)]
     y_eta: u8,
 	
-	#[arg(short, long, default_value_t = 1)]
+	#[arg(short, long, default_value_t = 8)]
     w_rho: u8,
 	
-	#[arg(short, long, default_value_t = 1)]
-    current_time: u8,
+	#[arg(short, long, default_value_t = (1/7) as f64 )]
+    k: f64,
 	
-	#[arg(short, long, default_value_t = 1)]
+	#[arg(short, long, default_value_t = 10)]
     time_zero: u8,
 	
-	#[arg(short, long, default_value_t = 1)]
-    max_bias: u8,
+	#[arg(short, long, default_value_t = 0.1)]
+    max_bias: f64,
 	
 	#[arg(short, long, default_value_t = 1)]
     sim_num: u8,
@@ -100,8 +133,11 @@ fn main() {
 	let args = Args::parse();
 
     for _ in 0..args.sim_num {
+		
         println!("Number of simulations {}!", args.sim_num);
+		
 	}
+	
 	
 }
 
