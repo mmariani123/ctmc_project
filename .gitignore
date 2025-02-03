@@ -1,5 +1,5 @@
-*.[mpynf]
-*.[mat]
+*.[m]
+*.mat
 Data/
 Figures/
 MM_RawData
