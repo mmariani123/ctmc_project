@@ -34,9 +34,11 @@ use clap::Parser;
 //    foo: Vec<String>
 //}
 
+mod run_main;
+
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
-struct Args {
+struct Args_help {
 
     /// N
     #[arg(short, long, default_value_t = 10)]
@@ -137,6 +139,9 @@ fn main() {
         println!("Number of simulations {}!", args.sim_num);
 		
 	}
+	
+	let args: Vec<String> = env::args().collect();
+    dbg!(args);
 	
 	
 }
