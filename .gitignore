@@ -3,6 +3,9 @@
 *.mat
 *.nf
 *.txt
+*.pdf
+*.html
+*.ipynb
 mm_notes_01112025.txt
 rust_project/src/run_main.rs
 Data/
