@@ -1,4 +1,4 @@
-*.[mr]
+*.[mrco]
 *.py
 *.mat
 *.nf
@@ -6,6 +6,7 @@
 *.pdf
 *.html
 *.ipynb
+*.exe
 mm_notes_01112025.txt
 rust_project/src/run_main.rs
 Data/
