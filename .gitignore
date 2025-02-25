@@ -1,4 +1,4 @@
-*.[mrco]
+*.[mr]
 *.py
 *.mat
 *.nf
@@ -16,3 +16,4 @@ Figures/
 MM_RawData/
 Modelutput/
 Pictures/
+*.pptx
