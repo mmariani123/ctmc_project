@@ -4,9 +4,9 @@ The Continuous Time Markov Chain Model (CTMC) Parasite Life Cycle Project
 
 Incorporating Rust, Python3, and MATLAB/OCTAVE, code along with parralelization and continuous integration frameworks to create a comprehensive program for modelling the plasmodium falcifiparum (malaria parasite) life cycle. Only the basic example user interface code (Rust, Python3, Shiny for Python) is currently public. 
 
-Here is example output from the Gillespie SSA basic SIR model implmeneted with parallel processing Rust. 
+Here is example output from the Gillespie SSA basic SIR modelimplmeneted with parallel processing (100 simulations) in Rust. 
 
-![ssa_result](https://github.com/user-attachments/assets/2f22aa8f-a639-4166-8760-43ff5a3253a6)
+![image](https://github.com/user-attachments/assets/71d56f19-c658-48a2-b7d6-c7a58121492f)
 
 The Previous Shiny for Python example that I created can be found at: https://michael-p-mariani.shinyapps.io/qbs_app/
 
