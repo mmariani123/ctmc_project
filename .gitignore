@@ -11,6 +11,7 @@
 !ctmc_cli.py
 mm_notes_01112025.txt
 rust_project/src/run_main.rs
+rust_ssa/
 Data/
 Figures/
 MM_RawData/
