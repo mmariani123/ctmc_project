@@ -1,6 +1,6 @@
 # ctmc_project
 
-<ul>*Currently under development.</ul> 
+<ins>*Currently under development.</ins> 
 
 The Continuous Time Markov Chain Model (CTMC) Parasite Life Cycle Project - Incrporating the Gillespie Stochastic Simulation Alogirithm (SSA) at certain key steps to generate solutions to the germane differntial equations. Currently uder devleopment (Core code cannot be made pubic currently) and just branched into a second, similar cross-population (both human and vector) disease allele transmission project.
 
